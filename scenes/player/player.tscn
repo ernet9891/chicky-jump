@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://dpbxwfgjvh8jt"]
+
+[ext_resource type="Script" uid="uid://dqnv045lbyrlu" path="res://scenes/player/player.gd" id="1_dovo2"]
+[ext_resource type="Texture2D" uid="uid://b7p86pdq60prn" path="res://assets/img/chicken.png" id="2_dovo2"]
+[ext_resource type="AudioStream" uid="uid://chko758dvx7y2" path="res://assets/audio/jumpsfx.mp3" id="3_gmlin"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rggrj"]
+size = Vector2(41, 65)
+
+[node name="Player" type="CharacterBody2D" unique_id=231658779 groups=["player"]]
+z_index = 1
+script = ExtResource("1_dovo2")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=178392356]
+position = Vector2(0, -39.999996)
+scale = Vector2(5, 5)
+texture = ExtResource("2_dovo2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=659109479]
+position = Vector2(-1.5, -37.5)
+shape = SubResource("RectangleShape2D_rggrj")
+
+[node name="Label" type="Label" parent="." unique_id=487168535]
+offset_left = -57.0
+offset_top = -106.0
+offset_right = 46.0
+offset_bottom = -83.0
+horizontal_alignment = 1
+
+[node name="JumpSFX" type="AudioStreamPlayer2D" parent="." unique_id=461326242]
+stream = ExtResource("3_gmlin")
+bus = &"SFX"
+
+[node name="MaxPowerIndicator" type="ColorRect" parent="." unique_id=1178026011]
+offset_left = -45.0
+offset_top = -106.0
+offset_right = 46.0
+offset_bottom = -92.0
+color = Color(0.3665946, 0.3665946, 0.36659458, 1)
+
+[node name="PowerIndicator" type="ColorRect" parent="." unique_id=1854608790]
+offset_left = -45.0
+offset_top = -106.0
+offset_right = 46.0
+offset_bottom = -92.0

@@ -1,0 +1,151 @@
+[gd_scene format=3 uid="uid://by8kdx7trcbgt"]
+
+[ext_resource type="PackedScene" uid="uid://bgfclk21at4jv" path="res://scenes/levels/objects/border.tscn" id="1_hiysf"]
+[ext_resource type="PackedScene" uid="uid://bwtwr26djt723" path="res://scenes/levels/objects/block.tscn" id="2_2nvtr"]
+[ext_resource type="PackedScene" uid="uid://dpbxwfgjvh8jt" path="res://scenes/player/player.tscn" id="3_yhg6e"]
+[ext_resource type="PackedScene" uid="uid://kaa2no4fqeds" path="res://scenes/levels/objects/spike/spike.tscn" id="4_ilch0"]
+[ext_resource type="PackedScene" uid="uid://dai3wq8gglibf" path="res://scenes/levels/objects/portal/portal.tscn" id="5_2nvtr"]
+[ext_resource type="Script" uid="uid://bto4nk3focgpn" path="res://scenes/levels/objects/trap_area.gd" id="6_yhg6e"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e5kad"]
+size = Vector2(54, 52)
+
+[node name="Level5" type="Node2D" unique_id=869509307]
+
+[node name="Border" parent="." unique_id=622670997 instance=ExtResource("1_hiysf")]
+
+[node name="ColorRect" type="ColorRect" parent="Border" unique_id=1301003875]
+z_index = -1
+offset_right = 1136.0
+offset_bottom = 664.0
+color = Color(0.16470589, 0.1764706, 0.20392157, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Blocks" type="Node" parent="." unique_id=369340168]
+
+[node name="Block" parent="Blocks" unique_id=1804574269 instance=ExtResource("2_2nvtr")]
+position = Vector2(303, 573)
+scale = Vector2(24.05217, 0.99999994)
+
+[node name="Block2" parent="Blocks" unique_id=1703180696 instance=ExtResource("2_2nvtr")]
+position = Vector2(-62.999966, 937.99994)
+rotation = -0.7958701
+scale = Vector2(18.439997, 0.99999994)
+
+[node name="Block3" parent="Blocks" unique_id=396591772 instance=ExtResource("2_2nvtr")]
+position = Vector2(452, 412)
+scale = Vector2(8.67, 1)
+
+[node name="Block4" parent="Blocks" unique_id=1373973004 instance=ExtResource("2_2nvtr")]
+position = Vector2(760, 435.99994)
+rotation = -0.7958701
+scale = Vector2(7.25, 1)
+
+[node name="Player" parent="." unique_id=231658779 instance=ExtResource("3_yhg6e")]
+position = Vector2(516, 400)
+
+[node name="Spike" type="Node" parent="." unique_id=1747005731]
+
+[node name="Spike2" parent="Spike" unique_id=921819802 instance=ExtResource("4_ilch0")]
+position = Vector2(307.99997, 549.9999)
+rotation = -0.7958701
+scale = Vector2(2.9999998, 2.9999998)
+current_level = "res://scenes/levels/levels/level_5.tscn"
+
+[node name="Spike3" parent="Spike" unique_id=961253778 instance=ExtResource("4_ilch0")]
+position = Vector2(346.00006, 512)
+rotation = -0.7958701
+scale = Vector2(2.9999998, 2.9999998)
+current_level = "res://scenes/levels/levels/level_5.tscn"
+
+[node name="Spike4" parent="Spike" unique_id=1938579079 instance=ExtResource("4_ilch0")]
+position = Vector2(383, 473.99997)
+rotation = -0.7958701
+scale = Vector2(2.9999998, 2.9999998)
+current_level = "res://scenes/levels/levels/level_5.tscn"
+
+[node name="Spike5" parent="Spike" unique_id=2076308717 instance=ExtResource("4_ilch0")]
+position = Vector2(421.99997, 434)
+rotation = -0.7958701
+scale = Vector2(2.9999998, 2.9999998)
+current_level = "res://scenes/levels/levels/level_5.tscn"
+
+[node name="Spike6" parent="Spike" unique_id=1713595215 instance=ExtResource("4_ilch0")]
+position = Vector2(270, 589)
+rotation = -0.7958701
+scale = Vector2(2.9999998, 2.9999998)
+current_level = "res://scenes/levels/levels/level_5.tscn"
+
+[node name="Spike7" parent="Spike" unique_id=235975921 instance=ExtResource("4_ilch0")]
+position = Vector2(630.00006, 444.00003)
+scale = Vector2(2.9999998, 2.9999998)
+current_level = "res://scenes/levels/levels/level_5.tscn"
+can_move = true
+
+[node name="Spike8" parent="Spike" unique_id=1704765954 instance=ExtResource("4_ilch0")]
+position = Vector2(820, 366.99988)
+rotation = -0.7958701
+scale = Vector2(2.9999998, 2.9999998)
+current_level = "res://scenes/levels/levels/level_5.tscn"
+
+[node name="Spike9" parent="Spike" unique_id=1418396066 instance=ExtResource("4_ilch0")]
+position = Vector2(858.0001, 329)
+rotation = -0.7958701
+scale = Vector2(2.9999998, 2.9999998)
+current_level = "res://scenes/levels/levels/level_5.tscn"
+
+[node name="Spike10" parent="Spike" unique_id=2138167147 instance=ExtResource("4_ilch0")]
+position = Vector2(895, 291)
+rotation = -0.7958701
+scale = Vector2(2.9999998, 2.9999998)
+current_level = "res://scenes/levels/levels/level_5.tscn"
+
+[node name="Spike11" parent="Spike" unique_id=1283056380 instance=ExtResource("4_ilch0")]
+position = Vector2(909, 350.99988)
+rotation = 2.3118932
+scale = Vector2(2.9999998, 2.9999998)
+current_level = "res://scenes/levels/levels/level_5.tscn"
+
+[node name="Spike12" parent="Spike" unique_id=614520222 instance=ExtResource("4_ilch0")]
+position = Vector2(947.0001, 313)
+rotation = 2.3118932
+scale = Vector2(2.9999998, 2.9999998)
+current_level = "res://scenes/levels/levels/level_5.tscn"
+
+[node name="Spike13" parent="Spike" unique_id=547309679 instance=ExtResource("4_ilch0")]
+position = Vector2(984, 275)
+rotation = 2.3118932
+scale = Vector2(2.9999998, 2.9999998)
+current_level = "res://scenes/levels/levels/level_5.tscn"
+
+[node name="Spike14" parent="Spike" unique_id=615105773 instance=ExtResource("4_ilch0")]
+position = Vector2(1110.0001, 540.00006)
+rotation = -1.5576952
+scale = Vector2(2.9999998, 2.9999998)
+current_level = "res://scenes/levels/levels/level_5.tscn"
+
+[node name="Spike15" parent="Spike" unique_id=1944451968 instance=ExtResource("4_ilch0")]
+position = Vector2(1106.0001, 442.00003)
+rotation = -1.6043707
+scale = Vector2(2.9999998, 2.9999998)
+current_level = "res://scenes/levels/levels/level_5.tscn"
+
+[node name="Spike16" parent="Spike" unique_id=2026730873 instance=ExtResource("4_ilch0")]
+position = Vector2(760.00006, 566.00006)
+rotation = -0.01640892
+scale = Vector2(2.9999998, 2.9999998)
+current_level = "res://scenes/levels/levels/level_5.tscn"
+
+[node name="Portal" parent="." unique_id=1564091836 instance=ExtResource("5_2nvtr")]
+position = Vector2(562, 525)
+next_level = "res://scenes/end/end_scene.tscn"
+
+[node name="TrapArea" type="Area2D" parent="." unique_id=1829731783]
+position = Vector2(626, 388)
+script = ExtResource("6_yhg6e")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TrapArea" unique_id=1953576095]
+position = Vector2(3, -1)
+shape = SubResource("RectangleShape2D_e5kad")
+
+[connection signal="body_entered" from="TrapArea" to="TrapArea" method="_on_body_entered"]

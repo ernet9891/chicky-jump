@@ -1,0 +1,86 @@
+[gd_scene format=3 uid="uid://c34jc1xvl4l73"]
+
+[ext_resource type="FontFile" uid="uid://bafhulnjag872" path="res://assets/fonts/Oswald-VariableFont_wght.ttf" id="1_8u3c3"]
+[ext_resource type="FontFile" uid="uid://juaq7y36s72s" path="res://assets/fonts/Tiny5-Regular.ttf" id="1_jcgkw"]
+[ext_resource type="PackedScene" uid="uid://ckg147xhs6jf" path="res://scenes/custom_ui/backbtn/back_button.tscn" id="2_f4nd5"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_0n00b"]
+font = ExtResource("1_8u3c3")
+font_size = 32
+
+[sub_resource type="LabelSettings" id="LabelSettings_4g85q"]
+font = ExtResource("1_8u3c3")
+font_size = 48
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cw0ii"]
+bg_color = Color(1, 0.23137255, 0.12156863, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qlqre"]
+bg_color = Color(0.5714503, 0.06906034, 0, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[node name="Credit" type="Control" unique_id=1818891124]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=694982262]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.26666668, 0.2627451, 0.2901961, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1102827951]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=285619226]
+layout_mode = 2
+text = "1. Pixel Art, Game Design, Programming: Moowno
+2. Audio: Pixabay
+3. Fonts: Google Fonts"
+label_settings = SubResource("LabelSettings_0n00b")
+
+[node name="Label" type="Label" parent="." unique_id=289511936]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 90.0
+offset_bottom = 126.0
+grow_horizontal = 2
+text = "Credits"
+label_settings = SubResource("LabelSettings_4g85q")
+horizontal_alignment = 1
+
+[node name="BackButton" parent="." unique_id=1909004245 instance=ExtResource("2_f4nd5")]
+layout_mode = 0
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("1_jcgkw")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_cw0ii")
+theme_override_styles/hover = SubResource("StyleBoxFlat_qlqre")
+text = " < Back "
+expand_icon = true

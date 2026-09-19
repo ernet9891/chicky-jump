@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bgfclk21at4jv"]
+
+[ext_resource type="PackedScene" uid="uid://bwtwr26djt723" path="res://scenes/levels/objects/block.tscn" id="1_art06"]
+
+[node name="Border" type="Node2D" unique_id=622670997]
+
+[node name="Block" parent="." unique_id=1804574269 instance=ExtResource("1_art06")]
+position = Vector2(-41, -24)
+scale = Vector2(1.9312804, 17.269688)
+
+[node name="Block2" parent="." unique_id=1351003852 instance=ExtResource("1_art06")]
+position = Vector2(1117, -16)
+scale = Vector2(1.9312804, 17.269688)
+
+[node name="Block3" parent="." unique_id=523113459 instance=ExtResource("1_art06")]
+position = Vector2(-62, 38)
+rotation = -1.5707964
+scale = Vector2(1.9312804, 31.74969)
+
+[node name="Block4" parent="." unique_id=20605428 instance=ExtResource("1_art06")]
+position = Vector2(1201, 609)
+rotation = 1.5707964
+scale = Vector2(1.9312804, 31.429686)

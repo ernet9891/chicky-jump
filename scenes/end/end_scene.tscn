@@ -1,0 +1,105 @@
+[gd_scene format=3 uid="uid://ktt0enrt2a1y"]
+
+[ext_resource type="Script" uid="uid://dxu15jerhpquo" path="res://scenes/end/end_scene.gd" id="1_yquca"]
+[ext_resource type="FontFile" uid="uid://bafhulnjag872" path="res://assets/fonts/Oswald-VariableFont_wght.ttf" id="2_k4nho"]
+[ext_resource type="FontFile" uid="uid://juaq7y36s72s" path="res://assets/fonts/Tiny5-Regular.ttf" id="2_vadf5"]
+[ext_resource type="Texture2D" uid="uid://cxvn0txosgfcw" path="res://assets/img/respect.png" id="3_a8ywt"]
+[ext_resource type="FontFile" uid="uid://bnksxqfypv5ds" path="res://assets/fonts/NotoSans-VariableFont_wdth,wght.ttf" id="3_k4nho"]
+[ext_resource type="AudioStream" uid="uid://bdlnlockrl6qb" path="res://assets/music/end_scene_music.mp3" id="3_vadf5"]
+[ext_resource type="PackedScene" uid="uid://ckg147xhs6jf" path="res://scenes/custom_ui/backbtn/back_button.tscn" id="4_3n378"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cdhfq"]
+bg_color = Color(1, 0.23137255, 0.12156863, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3n378"]
+bg_color = Color(0.5714503, 0.06906034, 0, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[node name="EndScene" type="Control" unique_id=776826924]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_yquca")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1197667236]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.265205, 0.26389998, 0.29, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1896423096]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -280.0
+offset_top = -504.0
+offset_right = 280.0
+offset_bottom = -229.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=614672184]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9453433, 0.90377516, 0.11938805, 1)
+theme_override_fonts/font = ExtResource("2_k4nho")
+theme_override_font_sizes/font_size = 64
+text = "CONGRATULATION!!!"
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="VBoxContainer" unique_id=324310987]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.48666662, 1, 0.44, 1)
+theme_override_fonts/font = ExtResource("3_k4nho")
+theme_override_font_sizes/font_size = 26
+text = "You Finally Reach The End!"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="VBoxContainer" unique_id=758016285]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_k4nho")
+theme_override_font_sizes/font_size = 32
+text = "Mr. Chicken escape the place and 
+return to its owner"
+horizontal_alignment = 1
+
+[node name="BackButton" parent="VBoxContainer" unique_id=1909004245 instance=ExtResource("4_3n378")]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("2_vadf5")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_cdhfq")
+theme_override_styles/hover = SubResource("StyleBoxFlat_3n378")
+text = "  Back to Menu  "
+expand_icon = true
+
+[node name="EndMusic" type="AudioStreamPlayer2D" parent="." unique_id=1137398523]
+stream = ExtResource("3_vadf5")
+autoplay = true
+parameters/looping = true
+
+[node name="Respect" type="Sprite2D" parent="." unique_id=653730810]
+position = Vector2(971, 476)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_a8ywt")
+
+[node name="Respect2" type="Sprite2D" parent="." unique_id=2039373857]
+position = Vector2(161, 168)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_a8ywt")

@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://kaa2no4fqeds"]
+
+[ext_resource type="Script" uid="uid://cr280sixj3owe" path="res://scenes/levels/objects/spike/spike.gd" id="1_c7p6w"]
+[ext_resource type="Texture2D" uid="uid://daai0vfds48n2" path="res://assets/img/spike.png" id="2_d1j3o"]
+[ext_resource type="AudioStream" uid="uid://bo6853oxsavvh" path="res://assets/audio/hurt.mp3" id="3_d1j3o"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x30tv"]
+size = Vector2(26.208399, 21.875067)
+
+[node name="Spike" type="Area2D" unique_id=1713595215]
+script = ExtResource("1_c7p6w")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=314864157]
+position = Vector2(0, -6)
+texture = ExtResource("2_d1j3o")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=440219247]
+position = Vector2(0.29000214, -1.5)
+scale = Vector2(0.479999, 0.31999904)
+shape = SubResource("RectangleShape2D_x30tv")
+
+[node name="HurtSFX" type="AudioStreamPlayer2D" parent="." unique_id=1331777575]
+stream = ExtResource("3_d1j3o")
+volume_db = 15.0
+bus = &"SFX"
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

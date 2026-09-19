@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://xg3scosssl0s"]
+
+[ext_resource type="PackedScene" uid="uid://dpbxwfgjvh8jt" path="res://scenes/player/player.tscn" id="1_7bmmy"]
+[ext_resource type="PackedScene" uid="uid://bwtwr26djt723" path="res://scenes/levels/objects/block.tscn" id="2_qiaei"]
+[ext_resource type="PackedScene" uid="uid://dai3wq8gglibf" path="res://scenes/levels/objects/portal/portal.tscn" id="3_o1ga7"]
+[ext_resource type="PackedScene" uid="uid://bgfclk21at4jv" path="res://scenes/levels/objects/border.tscn" id="4_lovyp"]
+[ext_resource type="FontFile" uid="uid://bafhulnjag872" path="res://assets/fonts/Oswald-VariableFont_wght.ttf" id="6_ok2eh"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_7bmmy"]
+font = ExtResource("6_ok2eh")
+font_size = 32
+
+[node name="Level1" type="Node2D" unique_id=1258245342]
+
+[node name="Player" parent="." unique_id=231658779 instance=ExtResource("1_7bmmy")]
+position = Vector2(232, 512)
+
+[node name="Portal" parent="." unique_id=1564091836 instance=ExtResource("3_o1ga7")]
+position = Vector2(1000, 144)
+next_level = "res://scenes/levels/levels/level_2.tscn"
+
+[node name="Border" parent="." unique_id=622670997 instance=ExtResource("4_lovyp")]
+
+[node name="ColorRect" type="ColorRect" parent="Border" unique_id=1413417456]
+z_index = -1
+offset_right = 1136.0
+offset_bottom = 664.0
+color = Color(0.16470589, 0.1764706, 0.20392157, 1)
+
+[node name="Label2" type="Label" parent="." unique_id=981750606]
+visible = false
+z_index = 2
+offset_left = 352.0
+offset_top = 56.0
+offset_right = 796.0
+offset_bottom = 105.0
+text = "Hold SPACE bar to charge JUMP POWER"
+label_settings = SubResource("LabelSettings_7bmmy")
+horizontal_alignment = 1
+
+[node name="Blocks" type="Node" parent="." unique_id=503981651]
+
+[node name="Block" parent="Blocks" unique_id=979086106 instance=ExtResource("2_qiaei")]
+position = Vector2(799.99994, 408)
+rotation = 1.5707964
+scale = Vector2(1.9510624, 8.780403)
+
+[node name="Block2" parent="Blocks" unique_id=1804574269 instance=ExtResource("2_qiaei")]
+position = Vector2(1152, 191.99998)
+rotation = 1.5707964
+scale = Vector2(1.9510624, 8.740403)

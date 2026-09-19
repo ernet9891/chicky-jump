@@ -1,0 +1,71 @@
+[gd_scene format=3 uid="uid://d2d3nc3xqp8l"]
+
+[ext_resource type="PackedScene" uid="uid://bgfclk21at4jv" path="res://scenes/levels/objects/border.tscn" id="1_yr768"]
+[ext_resource type="PackedScene" uid="uid://dpbxwfgjvh8jt" path="res://scenes/player/player.tscn" id="2_5kvo2"]
+[ext_resource type="PackedScene" uid="uid://bwtwr26djt723" path="res://scenes/levels/objects/block.tscn" id="3_3p8uo"]
+[ext_resource type="PackedScene" uid="uid://kaa2no4fqeds" path="res://scenes/levels/objects/spike/spike.tscn" id="4_bykst"]
+[ext_resource type="PackedScene" uid="uid://dai3wq8gglibf" path="res://scenes/levels/objects/portal/portal.tscn" id="5_5kvo2"]
+
+[node name="Level4" type="Node2D" unique_id=618840675]
+
+[node name="Border" parent="." unique_id=622670997 instance=ExtResource("1_yr768")]
+
+[node name="ColorRect" type="ColorRect" parent="Border" unique_id=98826745]
+z_index = -1
+offset_right = 1136.0
+offset_bottom = 664.0
+color = Color(0.16470589, 0.1764706, 0.20392157, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Player" parent="." unique_id=231658779 instance=ExtResource("2_5kvo2")]
+position = Vector2(207, 572)
+
+[node name="LevelBlocks" type="Node" parent="." unique_id=1773816739]
+
+[node name="Block5" parent="LevelBlocks" unique_id=1804574269 instance=ExtResource("3_3p8uo")]
+position = Vector2(493, 478)
+rotation = 2.037137
+scale = Vector2(18.439997, 0.99999994)
+
+[node name="Block6" parent="LevelBlocks" unique_id=1062836064 instance=ExtResource("3_3p8uo")]
+position = Vector2(956, -465)
+rotation = 2.037137
+scale = Vector2(18.439997, 0.99999994)
+
+[node name="Spikes" type="Node" parent="." unique_id=1592900401]
+
+[node name="Spike3" parent="Spikes" unique_id=1713595215 instance=ExtResource("4_bykst")]
+position = Vector2(478, 464)
+rotation = 0.46941835
+scale = Vector2(3, 3)
+current_level = "res://scenes/levels/levels/level_4.tscn"
+
+[node name="Spike4" parent="Spikes" unique_id=32386567 instance=ExtResource("4_bykst")]
+position = Vector2(603, 188.99998)
+rotation = -2.6780624
+scale = Vector2(2.9999998, 2.9999998)
+current_level = "res://scenes/levels/levels/level_4.tscn"
+
+[node name="Spike5" parent="Spikes" unique_id=901482650 instance=ExtResource("4_bykst")]
+position = Vector2(835.00006, 603.00006)
+scale = Vector2(2.9999998, 2.9999998)
+current_level = "res://scenes/levels/levels/level_4.tscn"
+
+[node name="Spike6" parent="Spikes" unique_id=1672809931 instance=ExtResource("4_bykst")]
+position = Vector2(532, 372.00003)
+scale = Vector2(3, 3)
+current_level = "res://scenes/levels/levels/level_2.tscn"
+
+[node name="Spike7" parent="Spikes" unique_id=169141594 instance=ExtResource("4_bykst")]
+position = Vector2(959, 386.00003)
+scale = Vector2(3, 3)
+current_level = "res://scenes/levels/levels/level_2.tscn"
+
+[node name="Portal" parent="." unique_id=1564091836 instance=ExtResource("5_5kvo2")]
+position = Vector2(950, 561)
+next_level = "res://scenes/levels/levels/level_5.tscn"
+
+[node name="Spike4" parent="." unique_id=2143662011 instance=ExtResource("4_bykst")]
+position = Vector2(754, 569)
+scale = Vector2(3, 3)
+current_level = "res://scenes/levels/levels/level_2.tscn"
