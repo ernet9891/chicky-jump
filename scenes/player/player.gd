@@ -99,7 +99,3 @@ func handle_flip_anim(direction: float) -> void:
 func apply_grav(delta: float) -> void:
 	if not is_on_floor():
 		velocity.y += jump_grav * delta
-
-
-func _on_trap_area_body_entered(body: Node2D) -> void:
-	pass # Replace with function body.

@@ -18,7 +18,7 @@ color = Color(0.16470589, 0.1764706, 0.20392157, 1)
 metadata/_edit_use_anchors_ = true
 
 [node name="Player" parent="." unique_id=231658779 instance=ExtResource("2_8japs")]
-position = Vector2(649, 615)
+position = Vector2(183, 595)
 
 [node name="LevelBlocks" type="Node" parent="." unique_id=1648487680]
 
@@ -53,23 +53,18 @@ scale = Vector2(3, 3)
 current_level = "res://scenes/levels/levels/level_3.tscn"
 
 [node name="Spike4" parent="Spikes" unique_id=1378823566 instance=ExtResource("4_sbbxg")]
-position = Vector2(419, 213.00003)
+position = Vector2(419, 214.00005)
 scale = Vector2(3, 3)
 current_level = "res://scenes/levels/levels/level_3.tscn"
 
 [node name="Spike5" parent="Spikes" unique_id=1264726899 instance=ExtResource("4_sbbxg")]
-position = Vector2(917, 445.00003)
+position = Vector2(917.00006, 447)
 scale = Vector2(3, 3)
 current_level = "res://scenes/levels/levels/level_3.tscn"
 
 [node name="Spike7" parent="Spikes" unique_id=819378601 instance=ExtResource("4_sbbxg")]
-position = Vector2(400.99994, 424)
+position = Vector2(516, 424)
 rotation = -3.1415927
-scale = Vector2(3, 3)
-current_level = "res://scenes/levels/levels/level_3.tscn"
-
-[node name="Spike2" parent="Spikes" unique_id=1633832086 instance=ExtResource("4_sbbxg")]
-position = Vector2(689, 373)
 scale = Vector2(3, 3)
 current_level = "res://scenes/levels/levels/level_3.tscn"
 

@@ -56,29 +56,29 @@ scale = Vector2(3, 3)
 current_level = "res://scenes/levels/levels/level_2.tscn"
 
 [node name="Spike6" parent="Spikes" unique_id=1713595215 instance=ExtResource("5_y8f4f")]
-position = Vector2(464, 605)
+position = Vector2(464, 603)
 scale = Vector2(3, 3)
 current_level = "res://scenes/levels/levels/level_2.tscn"
 
 [node name="Spike7" parent="Spikes" unique_id=1118654400 instance=ExtResource("5_y8f4f")]
-position = Vector2(814, 223)
+position = Vector2(814, 226)
 scale = Vector2(3, 3)
 current_level = "res://scenes/levels/levels/level_2.tscn"
 
 [node name="Spike8" parent="Spikes" unique_id=495841014 instance=ExtResource("5_y8f4f")]
-position = Vector2(643, 463)
+position = Vector2(643, 465)
 rotation = 3.1411338
 scale = Vector2(3, 3)
 current_level = "res://scenes/levels/levels/level_2.tscn"
 
 [node name="Spike9" parent="Spikes" unique_id=2052707506 instance=ExtResource("5_y8f4f")]
-position = Vector2(503.99997, 280.00003)
+position = Vector2(503.99997, 279.00003)
 rotation = 3.1411338
 scale = Vector2(3, 3)
 current_level = "res://scenes/levels/levels/level_2.tscn"
 
 [node name="Spike10" parent="Spikes" unique_id=60129422 instance=ExtResource("5_y8f4f")]
-position = Vector2(455, 225)
+position = Vector2(455, 226)
 scale = Vector2(3, 3)
 current_level = "res://scenes/levels/levels/level_2.tscn"
 
